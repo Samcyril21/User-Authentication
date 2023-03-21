@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <ul>
         <li>
-          <Link to="/login" onclick={logout} />
+          <Link to="/login" onclick={logout}>Logout</Link>
         </li>
       </ul>
     </div>

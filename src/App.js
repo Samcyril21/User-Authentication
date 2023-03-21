@@ -7,16 +7,16 @@ import Home from './Home';
 
 let userdetails=[
   {
-    username="sam",
-    password="1234",
+    username='sam',
+    password='1234',
     },
     {
-      username="sai",
-      password="5678",
+      username='sai',
+      password='5678',
     },
     {
-      username="justin",
-      password="1357",
+      username='justin',
+      password='1357',
     },
 ];
 
@@ -25,12 +25,12 @@ let userdetails=[
 export default function App() {
   
   let[islogin,setlogin]=useState(false)
-    
+  
   useEffect(()=>{
 if(localStorage.getItem('Login')){
   setlogin(true)
 }
-  }, []);
+  },[]);
 
 
 
@@ -86,7 +86,7 @@ function Homepage(){
   }  
   return(
     <>
-    {islogin?Homepage():Loginpage()}
+    {islogin? Homepage() : Loginpage()}
     </>
   );
 
